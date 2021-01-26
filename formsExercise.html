@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<h1>Customer Experience Survey</h1>
+
+<body>
+    <form>
+        <label for="storeNumber">Store Number</label>
+        <select id="storeNumber">
+            <option>3109</option>
+            <option> 2421</option>
+            <option>5357</option>
+        </select>
+        <fieldset>
+            <legend>When you visited:</legend>
+
+            <label>
+                Date visited
+                <input type="date" min="2020-01-25" max="2021-01-25">
+            </label>
+            <label>
+                Time:
+                <input type="time">
+            </label>
+        </fieldset>
+       
+        <label>
+            First Name:
+            <input type="text" placeholder="John">
+            <label>
+                Last Name:
+                <input type="text" placeholder="Doe">
+            </label>
+            <br>
+            <label>
+                Email:
+                <input type="email">
+            </label>
+            <br>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="genderchoice1" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="genderchoice2"value="female" checked>
+            <label for="Other">Other</label>
+            <input type="radio" name="gender" id="genderchoice3" value="other">
+            <br>
+            <label for="experience">Tell us about your experience:</label> 
+            <br>
+            <textarea name="experience" id="" cols="20" rows="2"></textarea>
+            <br>
+           <label for="visits">Times visited in the last month:</label>
+           <input type="number" value="1" id="quantity" name="quantity" min="1" max="30">
+           <br>
+           <label for="checkbox">Please check the box if you would be willing to be contacted about your experience</label>
+           <input type="checkbox" name="" id="checkbox">
+           <br>
+           <input type="password" pattern=".{5,10}" required title="Please enter a password that is 5 to 10 characters in length">
+
+           <br>
+           <input type="reset">
+           <input type="submit">
+    </form>
+</body>
+
+</html>
